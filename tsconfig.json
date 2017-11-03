@@ -16,7 +16,10 @@
       "dom"
     ]
   },
-  "include" : [
+  "include": [
+    "src/**/*.ts"
+  ],
+  "files": [
     "node_modules/@supertorpe/lib01/lib01.d.ts"
   ]
 }
