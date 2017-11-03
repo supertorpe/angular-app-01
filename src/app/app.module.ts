@@ -11,7 +11,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: 'internal', loadChildren: './@supertorpe/lib02#PrivateModule' }
+      { path: 'internal', loadChildren: './@supertorpe/lib02#PrivateModule' },
+      { path: 'external', loadChildren: '@supertorpe/lib01#PublicModule' }
     ])
   ],
   providers: [],
