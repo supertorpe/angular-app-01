@@ -1,4 +1,4 @@
-# Libreria5
+# angular-app-01
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
@@ -12,12 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build:app` to build the project. The build artifacts will be stored in the `dist/app` directory. Use the `-prod` flag for a production build.
-
-## Build library
-
-Run `ng build:lib` to build the library. The build artifacts will be stored in the `dist/lib` directory.
-
+Run `ng build` to build the project. The build artifacts will be stored in the `dist` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
