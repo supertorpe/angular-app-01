@@ -5,6 +5,8 @@
 /tmp
 /out-tsc
 
+/src/@supertorpe
+
 # dependencies
 /node_modules
 

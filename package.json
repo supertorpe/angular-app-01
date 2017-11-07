@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --aot",
+    "predebug": "rimraf ./src/@supertorpe && cpr ./node_modules/@supertorpe-dev/lib01/src/app/@supertorpe ./src/@supertorpe",
+    "build": "ng build --aot",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,19 +22,21 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "@supertorpe/lib01": "git+https://github.com/supertorpe/angular-lib-01-release.git",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14",
-    "@supertorpe/lib01": "git+https://github.com/supertorpe/angular-lib-01-release.git"
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "1.5.0",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
+    "@supertorpe-dev/lib01": "git+https://github.com/supertorpe/angular-lib-01.git",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.2.0",
+    "cpr": "^3.0.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -43,6 +46,7 @@
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
+    "rimraf": "^2.6.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
